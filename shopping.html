@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/free-vector/seasonal-sale-discounts-presents-purchase-visiting-boutiques-luxury-shopping-price-reduction-promotional-coupons-special-holiday-offers-vector-isolated-concept-metaphor-illustration_335657-2766.jpg?t=st=1746800324~exp=1746803924~hmac=c7e60e78d6112b3b25cffdbb03f9cd972c5f8d7267d20f2b09598fe9e71f1369&w=826');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: black;
+    }
+    header, nav, section, footer {
+      padding: 20px;
+      margin: 10px;
+      background-color: rgba(255, 182, 193, 0.6);
+
+      border-radius: 8px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 8px;
+    }
+    form input, form select, form button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Online Shopping Store</h1>
+  </header>
+
+  <nav>
+    <a href="#electronics">Electronics</a>
+    <a href="#clothing">Clothing</a>
+    <a href="#groceries">Groceries</a>
+    <a href="#cart">Shopping Cart</a>
+  </nav>
+
+  <section id="electronics">
+    <h2>Top Electronics</h2>
+    <div class="gallery">
+      <img src="https://img.freepik.com/free-photo/still-life-books-versus-technology_23-2150062920.jpg?t=st=1746800075~exp=1746803675~hmac=4eae3cdad4e84aba1339cfb376e1c562e6e47b563290982f561ce1c1bdf9db98&w=1380" alt="Laptop">
+      <img src="https://img.freepik.com/free-photo/elegant-smartphone-composition_23-2149437106.jpg?t=st=1746800103~exp=1746803703~hmac=8aa1f8a285257350c6a309a00e723625b1683ad20b8e5be083a242cdc3858b8d&w=740" alt="Smartphone">
+      <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817607.jpg?t=st=1746800124~exp=1746803724~hmac=61d845427fddf6a0adf58b99eca3d6322f89de7c763053426df0f28b1f0a65bf&w=740" alt="Headphones">
+    </div>
+  </section>
+
+  <section id="clothing">
+    <h2>Trending Clothing</h2>
+    <div class="gallery">
+      <img src="https://img.freepik.com/premium-vector/realistic-mockup-male-white-polo-shirt_107791-2142.jpg?w=1060" alt="Shirt">
+      <img src="https://img.freepik.com/free-photo/jeans_1203-8093.jpg?t=st=1746800107~exp=1746803707~hmac=fb683fb726bfd59c93f5c8ffc4d3d277c1c54dc639b6aa6e78240887e67d285b&w=826" alt="Jeans">
+      <img src="https://img.freepik.com/premium-photo/young-handsome-guy-warm-knitted-clothes-against-space-black-wall_281858-1933.jpg?w=740" alt="Jacket">
+    </div>
+  </section>
+
+  <section id="groceries">
+    <h2>Fresh Groceries</h2>
+    <div class="gallery">
+      <img src="https://img.freepik.com/free-psd/mix-fruits-png-isolated-transparent-background_191095-9865.jpg?t=st=1746799915~exp=1746803515~hmac=d1e6370142d5097b3713d070f15f359872afb9fcaf5b05d56509a5c9042cc19f&w=826" alt="Fruits">
+      <img src="https://img.freepik.com/free-photo/basket-full-vegetables_1112-316.jpg?t=st=1746799991~exp=1746803591~hmac=8a142802b794a3649f80e838fb77a40ee73f3ac22663982978e13bcc96447021&w=1380" alt="Vegetables">
+      <img src="https://img.freepik.com/free-vector/milk-products-template_1284-14600.jpg?t=st=1746800033~exp=1746803633~hmac=1c2c2a4b25a606f80477e4f82c9a53be606b053d0cdc4e2c72ca42af9170efd2&w=996" alt="Dairy Products">
+    </div>
+  </section>
+
+  <section id="cart">
+    <h2>Your Cart</h2>
+    <form>
+      <label for="item">Item Name:</label>
+      <input type="text" id="item" name="item" required>
+      
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" required>
+      
+      <label for="delivery">Delivery Address:</label>
+      <input type="text" id="delivery" name="delivery" required>
+
+      <button type="submit">Checkout</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shopping Cart. All rights reserved.</p>
+  </footer>
+</body>
+</html>
